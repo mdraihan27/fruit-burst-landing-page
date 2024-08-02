@@ -12,3 +12,11 @@
 .team-div {
     
 }
+
+.nav-open-button:hover ~ nav{
+    display: flex !important;
+}
+
+.nav-close-button:hover nav {
+    display: hidden !important; 
+}

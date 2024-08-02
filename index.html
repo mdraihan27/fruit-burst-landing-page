@@ -36,32 +36,44 @@
 
 
 </head>
-<body class=" pt-[210px]">
+<body class="pt-[50px] lg:pt-[210px]  px-[35px] lg:px-[0px]">
 
     <header class="max-w-[1440px] mx-auto">
+      <!-- mobile device top item  -->
+
+      <div class="flex lg:hidden justify-between items-center">
+            <div class="flex items-center gap-[23px] ">
+              <img src="images/logo.png" alt="">
+              <h3 class="text-[40px] font-bold">Fruit Burst</h3>
+            </div>
+
+            <button class="nav-open-button text-[45px]"><i class="fa-solid fa-bars"></i></button>
+      </div>
         <!-- nav bar  -->
-         <nav class="fixed-top mt-[40px] max-w-[1440px] mx-auto flex bg-nav-pink h-[120px] rounded-full  text-white justify-between items-center ps-[65px] pe-[55px] py-[32px]" >
-            <ul class="flex gap-[32px] text-[18px] font-medium items-center">
+         <nav class=" fixed-top w-[80%] lg:w-full  mt-[120px] lg:mt-[40px] max-w-[1440px] mx-auto hidden lg:flex flex-col lg:flex-row gap-[40px] lg:gap-[0px] bg-nav-pink lg:h-[120px] rounded-xl backdrop-brightness-50 lg:backdrop-brightness-100 lg:rounded-full  text-white justify-between items-center ps-[65px] pe-[55px] py-[32px]" >
+            <ul class="flex flex-col lg:flex-row gap-[32px] text-[35px] lg:text-[18px] font-medium items-center">
                 <li><a href="">Home</a></li>
                 <li><a href="">About Us</a></li>
                 <li><a href="">Shop</a></li>
                 <li><a href="">All Fruits</a></li>
             </ul>
 
-            <div class="flex items-center gap-[23px]">
+            <div class="lg:flex items-center gap-[23px] hidden">
                 <img src="images/logo.png" alt="">
                 <h3 class="text-[40px] font-bold">Fruit Burst</h3>
             </div>
 
-            <div class="flex items-center bg-white rounded-full px-[30px] py-[17px] w-[400px] justify-between">
-                <input type="text" placeholder="Search here" class=" bg-transparent placeholder:text-[16px]">
-                <i class="fa-solid fa-magnifying-glass text-black text-[20px]"></i>
+            <div class="flex items-center bg-white rounded-full px-[30px] py-[17px] w-[100%] lg:w-[400px] justify-between">
+                <input type="text" placeholder="Search here" class=" bg-transparent placeholder:text-[25px] lg:placeholder:text-[16px]">
+                <i class="fa-solid fa-magnifying-glass text-black text-[25px] lg:text-[20px]"></i>
             </div>
+
+            <button class="nav-close-button text-[30px] lg:hidden " >Close</i></button>
          </nav>
 
          <!-- banner  -->
 
-         <div class="mt-[0px] flex flex-col items-center">
+         <div class="mt-[40px] lg:mt-[0px]  flex flex-col items-center">
 
              <!-- carousel  -->
 
@@ -93,11 +105,11 @@
 
              <!-- floating text of banner  -->
 
-             <div class="flex flex-col justify-center px-[0px] top-[275px] absolute w-[1196px] mx-auto  ">
-                <h2 class="text-[72px] font-extrabold text-white text-center mb-[25px]">Exotic tastes at your<br>doorstep</h2>
-                <p class="text-[20px] font-medium text-white text-center mb-[30px]">We supply high quality organic products</p>
+             <div class="flex flex-col justify-center px-[0px] top-[200px] lg:top-[275px] absolute w-[1196px] mx-auto  ">
+                <h2 class=" text-[45px] lg:text-[72px] font-extrabold text-white text-center mb-[25px]">Exotic tastes at your<br>doorstep</h2>
+                <p class="text-[20px] font-medium text-white text-center mb-[80px] lg:mb-[30px]">We supply high quality organic products</p>
                 <button class="btn btn-primary text-[20px] font-extrabold text-white bg-nav-pink border-none mx-auto flex items-center justify-center w-[154px] h-[64px]">Shop Now</button>
-                <div class="flex items-center justify-around shadow-lg bg-white py-[45px] px-[20px] mt-[85px] rounded-[8px]">
+                <div class=" hidden lg:flex items-center justify-around shadow-lg bg-white py-[45px] px-[20px] mt-[85px] rounded-[8px]">
                     <div class="flex flex-col items-center gap-[18px]">
                         <img src="images/fruit1.png" alt="" >
                         <p class="text-[20px] font-medium">Berry</p>
@@ -127,7 +139,7 @@
 
     </header>
 
-    <main class="max-w-[1440px] mx-auto">
+    <main class="max-w-[1440px] mx-auto hidden">
 
         <!-- deal of the day section  -->
         <section class="mt-[250px] ">
@@ -406,7 +418,7 @@
           </section>
     </main>
 
-    <footer class="bg-footer-bg mt-[115px] py-[120px]">
+    <footer class="bg-footer-bg mt-[115px] py-[120px] hidden">
       <div class="max-w-[1440px] mx-auto flex flex-col items-center">
         <div class="flex gap-[17px] items-center">
           <img src="images/logo.png" alt="">
